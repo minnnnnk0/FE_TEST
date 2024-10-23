@@ -48,7 +48,7 @@ describe('회원가입 테스트', () => {
   });
 
   test('이메일을 입력하고, 비빌번호와 비밀번호 확인 값이 일치하면 회원가입 버튼이 활성화된다.', () => {
-    // 회원가입 버튼이 비활성화 되어있는 것을 확인하고 시작하면 좋음
+
     const signupButton = screen.getByRole('button', { name: '회원가입' });
     expect(signupButton).toBeDisabled();
 
