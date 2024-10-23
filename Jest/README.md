@@ -10,7 +10,7 @@ npm install --save-dev jest @types/jest ts-jest jest-environment-jsdom @testing-
 
 - Jest 환경설정
 
-```jsx
+```json
 // package.json
 "test": "jest --watchAll",
 ...
