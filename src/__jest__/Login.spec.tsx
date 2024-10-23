@@ -1,0 +1,48 @@
+import '@testing-library/jest-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { render, renderHook, waitFor, screen } from '@testing-library/react';
+import { createMemoryRouter, RouterProvider } from 'react-router-dom';
+import LoginPage from '../pages/LoginPage';
+import useLogin from '../hooks/useLogin';
+
+const queryClient = new QueryClient({
+  defaultOptions: {},
+});
+
+describe('로그인 테스트', () => {
+  test('로그인에 실패하면 에러 메세지가 나타난다.', async () => {
+
+    // given - 로그인 화면이 랜더링
+    const routes = [
+      {
+        path: '/login',
+        element: <LoginPage />,
+      },
+    ];
+
+    const router = createMemoryRouter(routes, {
+      initialEntries: ['/login'],
+      initialIndex: 0,
+    });
+
+    render(
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    );
+
+    // when - 사용자가 로그인에 실패
+    const wrapper = ({ children }) => (
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    );
+
+    const { result } = renderHook(() => useLogin(), { wrapper });
+
+    // then - 에러 메세지가 나타남
+    await waitFor(() => result.current.isError);
+    
+    const errorMessage = await screen.findByTestId('error-message');
+    expect(errorMessage).toBeInTheDocument();
+
+  });
+});
