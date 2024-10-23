@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
-import SignupPage from 'pages/SignupPage';
+import SignupPage from '../pages/SignupPage';
 import { createMemoryRouter, RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
@@ -40,7 +40,7 @@ describe('회원가입 테스트', () => {
     })
 
     // then - 에러 메세지가 표시
-    const errorMessage = await screen.findByTestId("error-massage")
+    const errorMessage = await screen.findByTestId("error-message")
     expect(errorMessage).toBeInTheDocument()
 
   });
