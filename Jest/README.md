@@ -11,7 +11,6 @@ npm install --save-dev jest @types/jest ts-jest jest-environment-jsdom @testing-
 - Jest 환경설정
 
 ```json
-// package.json
 "test": "jest --watchAll",
 ...
 "jest": {
@@ -38,7 +37,7 @@ describe("환경설정 테스트", () => {
 
 |||
 |---|---|
-|![signup](../../image/signup1.png)|![signup](../../image/signup2.png)|
+|![signup](../image/signup1.png)|![signup](../image/signup2.png)|
 |||
 
 
@@ -91,7 +90,7 @@ fireEvent.change(confirmPasswordInput, {
     });
 ```
 
-![singup](../../image/jest_error1.png)
+![singup](../image/jest_error1.png)
 
 - 콘솔을 찍어서 값을 확인했다
     - 넣은 순서대로 값이 찍히는 것을 확인할 수 있음 !!
@@ -107,7 +106,7 @@ const signupButton = screen.getByRole('button', { name: '회원가입' });
 expect(signupButton).toBeDisabled();
 ```
 
-![singup](../../image/jest_error2.png)
+![singup](../image/jest_error2.png)
 
 
 <br/>
@@ -118,7 +117,7 @@ expect(signupButton).toBeDisabled();
 
 |||
 |---|---|
-|![login](../../image/login1.png)|![login](../../image/login2.png)|
+|![login](../image/login1.png)|![login](../image/login2.png)|
 |||
 
 > 로그인에 실패하면 에러 메세지가 나타난다.
@@ -151,7 +150,7 @@ fireEvent.click(loginButton);
 
 - 테스트는 잘 돌아갔고, 400에러를 발생하면서 콘솔에 에러가 출력!!
 
-![singup](../../image/jest_error3.png)
+![singup](../image/jest_error3.png)
 
 - axios에서 에러가 발생하기 때문에 콘솔에 에러가 찍힘
     - 리액트 쿼리에서는 로거 옵션을 추가해서 로깅을 끄는 것을 권장하더라
