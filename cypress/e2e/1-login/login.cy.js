@@ -13,6 +13,14 @@ describe('로그인 화면', () => {
     cy.get("@emailInput").invoke("val").should("eq", "test@email.com");
     cy.get("@passwordInput").invoke("val").should("eq", "password");
 
+    cy.intercept(
+      {
+        method: "POST",
+        url: "/user/login",
+      },
+      { token: "AUTH_TOKEN" }
+    ).as("login");
+
     cy.get("[data-cy=loginButton]").should("exist").click();
 
     // then - 로그인에 성공하고 메인페이지로 이동
