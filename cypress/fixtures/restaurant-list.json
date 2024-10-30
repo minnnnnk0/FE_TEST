@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza-1",
+        "ratings": 4.75,
+        "minPrice": 21000,
+        "icon": "https://kr.object.ncloudstorage.com/icons/ic-pizza.png"
+    },
+    {
+        "id": 2,
+        "name": "Pizza-2",
+        "ratings": 3.96,
+        "minPrice": 34000,
+        "icon": "https://kr.object.ncloudstorage.com/icons/ic-pizza.png"
+    },
+    {
+        "id": 3,
+        "name": "Pizza-3",
+        "ratings": 3.3,
+        "minPrice": 30000,
+        "icon": "https://kr.object.ncloudstorage.com/icons/ic-pizza.png"
+    },
+    {
+        "id": 4,
+        "name": "Pizza-4",
+        "ratings": 1.2,
+        "minPrice": 30000,
+        "icon": "https://kr.object.ncloudstorage.com/icons/ic-pizza.png"
+    },
+    {
+        "id": 5,
+        "name": "Pizza-5",
+        "ratings": 1.83,
+        "minPrice": 12000,
+        "icon": "https://kr.object.ncloudstorage.com/icons/ic-pizza.png"
+    }
+]
