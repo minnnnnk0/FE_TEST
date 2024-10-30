@@ -1,0 +1,59 @@
+{
+    "id": 1,
+    "menu_set": [
+        {
+            "id": 1,
+            "name": "Pizza-1",
+            "description": "Description",
+            "price": 18000,
+            "picture": "https://kr.object.ncloudstorage.com/icons/pepperoni-pizza.jpeg",
+            "restaurant": 1
+        },
+        {
+            "id": 2,
+            "name": "Pizza-2",
+            "description": "Description",
+            "price": 21000,
+            "picture": "https://kr.object.ncloudstorage.com/icons/prosciutto-pizza.jpeg",
+            "restaurant": 1
+        },
+        {
+            "id": 3,
+            "name": "Pizza-3",
+            "description": "Description",
+            "price": 17000,
+            "picture": "https://kr.object.ncloudstorage.com/icons/mushroom-pizza.jpeg",
+            "restaurant": 1
+        },
+        {
+            "id": 4,
+            "name": "Pizza-4",
+            "description": "Description",
+            "price": 17000,
+            "picture": "https://kr.object.ncloudstorage.com/icons/margherita-pizza.jpeg",
+            "restaurant": 1
+        },
+        {
+            "id": 5,
+            "name": "Pizza-5",
+            "description": "Description",
+            "price": 19000,
+            "picture": "https://kr.object.ncloudstorage.com/icons/cheese-pizza.jpeg",
+            "restaurant": 1
+        },
+        {
+            "id": 6,
+            "name": "Pizza-6",
+            "description": "Description",
+            "price": 14000,
+            "picture": "https://kr.object.ncloudstorage.com/icons/cheese-oven-spaghetti.jpeg",
+            "restaurant": 1
+        }
+    ],
+    "name": "Pizza",
+    "phone": "02-1234-1234",
+    "address": "서울시 n구 n동",
+    "minPrice": 21000,
+    "ratings": 4.75,
+    "foodType": 1
+}
