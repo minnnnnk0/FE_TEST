@@ -28,9 +28,10 @@ npm install --save-dev cypress
 
 ![cypress](../Image/cypress3.png)
 
-- 추가
-
 - 테스트 구동 시 사용자가 직접 사용하는 화면을 같이 보여줘서 좀 더 프론트엔드 테스트에 적합하다고 느껴짐!
+
+![cypress](../Image/cypress.gif)
+
 
 ### 테스트 코드 작성
 
