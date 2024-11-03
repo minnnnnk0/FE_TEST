@@ -104,7 +104,6 @@ cy.get("@passwordInput").invoke("val").should("eq", "password");
 ![cypress5](../Image/cypress5.png)
 
 - 하지만 테스트 자체의 접근이나 구동은 잘 돌아감 !!
-
 - Type error를 없애기 위해 `type` 패키지를 설치해야함
 
 ```jsx
