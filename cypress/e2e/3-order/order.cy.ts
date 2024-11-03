@@ -128,7 +128,13 @@ describe('오더를 테스트 한다.', () => {
       cy.get("[data-cy=decrementBtn]").should("be.visible").click();
       cy.get("@counter").should("contain", 1);
       cy.get("[data-cy=completeBtn]").should("be.visible").click();
-      cy.url().should("include", "/");
+      
+      // cy.url().should("include", "/");
+      cy.url().should((url) => {
+        const currentUrl = new URL(url);
+        expect(currentUrl.pathname).to.equal("/");
+       
+       });
     });
   });
 })
