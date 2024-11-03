@@ -30,7 +30,7 @@ npm install --save-dev cypress
 
 - 테스트 구동 시 사용자가 직접 사용하는 화면을 같이 보여줘서 좀 더 프론트엔드 테스트에 적합하다고 느껴짐!
 
-![cypress](../Image/cypress.gif)
+![cypress](https://github.com/user-attachments/assets/2908cba5-cdcf-45ae-beb9-6c189d071eeb)
 
 
 ### 테스트 코드 작성
@@ -101,10 +101,9 @@ cy.get("@passwordInput").invoke("val").should("eq", "password");
 
 > ts파일을 생성하면 `Cannot find name 'cy'`라는 에러가 발생
 
-![cypress](../Image/cypress5.png)
+![cypress5](../Image/cypress5.png)
 
 - 하지만 테스트 자체의 접근이나 구동은 잘 돌아감 !!
-
 
 - Type error를 없애기 위해 `type` 패키지를 설치해야함
 
